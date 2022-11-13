@@ -67,7 +67,7 @@
 									                                                   ——2022.10.23
 									
 <script>
-  fetch('https://v1.hitokoto.cn/?c=b')
+  fetch('https://v1.hitokoto.cn')
     .then(response => response.json())
     .then(data => {
       const hitokoto = document.getElementById('hitokoto_text')
@@ -75,8 +75,7 @@
       hitokoto.innerText = data.hitokoto
     })
     .catch(console.error)
-</script>
-									
+</script>								
 									
 									
 								
